@@ -4,9 +4,9 @@
 
 |                                              |
 | -------------------------------------------- |
-| 1. Quick description                         |
+| 1. Quick description (in progress)           |
 | [2. Installation Guide](#installation-guide) |
-| 3. Help / Contact Me                         |
+| 3. Help / Contact Me (in progress)           |
 
 ## Installation Guide
 
