@@ -4,9 +4,15 @@
 
 |                                              |
 | -------------------------------------------- |
-| 1. Quick description (in progress)           |
+| [1. Quick description](#quick-description)   |
 | [2. Installation Guide](#installation-guide) |
 | 3. Help / Contact Me (in progress)           |
+
+## Quick description
+
+sympa-shell is a pretty cool shell :) It's very simple but effective! When you are in a git folder you will see the branch you are currently in. This project is still under development and is destined to evolve.
+
+![](https://files.valentinraillard.fr/GitHub/sympa-shell/10.png)
 
 ## Installation Guide
 
