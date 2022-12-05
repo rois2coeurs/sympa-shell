@@ -71,3 +71,4 @@ And finally you will have sympa-shell visual !
 | [1.1.1](https://github.com/rois2coeurs/sympa-shell/commit/ae5163064fd842ba831d7582de689082abe1f0c6) | added comment to distinguish sympa-shell part in `.bashrc` file, excess space char removed |
 | [1.1.2](https://github.com/rois2coeurs/sympa-shell/commit/c1f097f43ce27f95a78d74f1f7316e2ec355917e) | changing function get_distribution to variable distribution_name |
 | [1.2.0](https://github.com/rois2coeurs/sympa-shell/commit/5931f7895354f20d5cf1f56d09c98dfbd3479698) | Now displays command execution time. The script now creates a file in a folder instead of directly writing everything to `.bashrc` |
+| [1.2.1](https://github.com/rois2coeurs/sympa-shell/commit/82fd4794c37781c59e7194609a274b5e9bf26075) | Change in install script to detect if fonts and .bashrc sympa-shell.sh links already exist |
