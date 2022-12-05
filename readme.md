@@ -67,3 +67,5 @@ And finally you will have sympa-shell visual !
 | [1.0.2](https://github.com/rois2coeurs/sympa-shell/commit/ac39ac2967d6aaa819b9f025f31aaf15274ba4c3) | Bug correction : The pointer was not writing to the right place from time to time |
 | [1.0.3](https://github.com/rois2coeurs/sympa-shell/commit/9f657128aa861eaad182a552d74695b95f87c2d8) | distribution wasn't always showing up |
 | [1.0.4](https://github.com/rois2coeurs/sympa-shell/commit/1322e3f06d07780e0a83f88413ffadefd17a4006) | Anti color-bomb in the terminal |
+| [1.1.0](https://github.com/rois2coeurs/sympa-shell/commit/73637ad1fcc5e67860bfcb77f150076624ac4aac) | The logo of the distribution changes according to the installed distribution |
+| [1.1.1](https://github.com/rois2coeurs/sympa-shell/commit/ae5163064fd842ba831d7582de689082abe1f0c6) | added comment to distinguish sympa-shell part in `.bashrc` file, excess space char removed |
