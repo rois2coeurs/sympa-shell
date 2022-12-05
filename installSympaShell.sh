@@ -1,3 +1,4 @@
+# Fonts Download / Install
 echo "Downloading the fonts"
 wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
 FONTDIR=~/.fonts
@@ -24,10 +25,17 @@ echo "Suppresing the remaining files"
 rm JetBrainsMono*.zip
 echo "Remaining files supressed"
 
-echo "====================IMPORTANT===================="
-echo "If you got some visual bug on the bash you will need to manualy change your terminal font in the parameters more informations on https://github.com/rois2coeurs/sympa-shell"
-echo "================================================="
-
+# Script Install
+SCRIPTDIR=~/.sympa-shell
+if [ -d "$SCRIPTDIR" ]
+then
+    echo "$SCRIPTDIR already exist. Removing..."
+    rm -r $SCRIPTDIR
+fi
+echo "$SCRIPTDIR will be created"
+mkdir $SCRIPTDIR
+echo "Copying files to $SCRIPTDIR"
+echo "$(cat sympaShellBashrc)" >> $SCRIPTDIR/sympa-shell.sh
 echo "" >> ~/.bashrc
-echo "$(cat sympaShellBashrc)" >> ~/.bashrc
+echo "source $SCRIPTDIR/sympa-shell.sh" >> ~/.bashrc
 echo "Installation complete. Please restart your shell to see your SYMPA SHELL !"
