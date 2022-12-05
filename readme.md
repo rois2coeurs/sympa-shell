@@ -15,6 +15,10 @@ sympa-shell is a pretty cool shell :) It's very simple but effective! When you a
 
 ![](https://files.valentinraillard.fr/GitHub/sympa-shell/10.png)
 
+sympa-shell also displays command execution time
+
+![](https://files.valentinraillard.fr/GitHub/sympa-shell/11.png)
+
 ## Installation Guide
 
 Clone the depot via `git clone https://github.com/rois2coeurs/sympa-shell.git` or just download it one zip format.
