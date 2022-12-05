@@ -7,5 +7,8 @@ get_distribution() {
 }
 
 PROMPT_DIRTRIM=2
- 
+
+normalcol="$(tput sgr0)"
+trap 'echo -n "$normalcol"' DEBUG
+
 PS1="\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\] $(get_distribution) \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch) \n\[\e[38;5;222m\]╰─ "
