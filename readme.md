@@ -69,3 +69,4 @@ And finally you will have sympa-shell visual !
 | [1.0.4](https://github.com/rois2coeurs/sympa-shell/commit/1322e3f06d07780e0a83f88413ffadefd17a4006) | Anti color-bomb in the terminal |
 | [1.1.0](https://github.com/rois2coeurs/sympa-shell/commit/73637ad1fcc5e67860bfcb77f150076624ac4aac) | The logo of the distribution changes according to the installed distribution |
 | [1.1.1](https://github.com/rois2coeurs/sympa-shell/commit/ae5163064fd842ba831d7582de689082abe1f0c6) | added comment to distinguish sympa-shell part in `.bashrc` file, excess space char removed |
+| [1.1.2](https://github.com/rois2coeurs/sympa-shell/commit/c1f097f43ce27f95a78d74f1f7316e2ec355917e) | changing function get_distribution to variable distribution_name |
