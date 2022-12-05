@@ -6,9 +6,35 @@ get_distribution() {
     cat /etc/*-release | grep ^ID= | sed -z 's/ID=//g '
 }
 
+distribution_icon=$(
+    case "$(get_distribution)" in
+        ("kali") echo "" ;;
+        ("ubuntu") echo "" ;;
+        ("debian") echo "" ;;
+        ("arch") echo "" ;;
+        ("centos") echo "" ;;
+        ("raspbian") echo "" ;;
+        ("elementary") echoo "" ;;
+        ("fedora") echo "" ;;
+        ("coreos") echo "" ;;
+        ("gentoo") echo "" ;;
+        ("mageia") echo "" ;;
+        ("sabayon") echo "" ;;
+        ("slackware") echo "" ;;
+        ("linuxmint") echo "" ;;
+        ("alpine") echo "" ;;
+        ("aosc") echo "" ;;
+        ("nixos") echo "" ;;
+        ("devuan") echo "" ;;
+        ("manjaro") echo "" ;;
+        ("opensuse" | "tumbleweed") echo "" ;;
+        ( * ) echo "" ;;
+    esac
+)
+
 PROMPT_DIRTRIM=2
 
 normalcol="$(tput sgr0)"
 trap 'echo -n "$normalcol"' DEBUG
 
-PS1="\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\] $(get_distribution) \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch) \n\[\e[38;5;222m\]╰─ "
+PS1="\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\]$distribution_icon  $(get_distribution) \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch) \n\[\e[38;5;222m\]╰─ "
