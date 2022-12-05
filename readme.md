@@ -1,6 +1,6 @@
 # Sympa Shell
 
-## Sommaire
+## Synopsis
 
 |                                              |
 | -------------------------------------------- |
@@ -66,3 +66,4 @@ And finally you will have sympa-shell visual !
 | [1.0.1](https://github.com/rois2coeurs/sympa-shell/commit/f33318e26dac9e87d247ab4b2d5aa1ad59b58fda) | Changed the folder logo which was not displayed correctly |
 | [1.0.2](https://github.com/rois2coeurs/sympa-shell/commit/ac39ac2967d6aaa819b9f025f31aaf15274ba4c3) | Bug correction : The pointer was not writing to the right place from time to time |
 | [1.0.3](https://github.com/rois2coeurs/sympa-shell/commit/9f657128aa861eaad182a552d74695b95f87c2d8) | distribution wasn't always showing up |
+| [1.0.4](https://github.com/rois2coeurs/sympa-shell/commit/1322e3f06d07780e0a83f88413ffadefd17a4006) | Anti color-bomb in the terminal |
