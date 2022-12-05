@@ -6,7 +6,8 @@
 | -------------------------------------------- |
 | [1. Quick description](#quick-description)   |
 | [2. Installation Guide](#installation-guide) |
-| 3. Help / Contact Me (in progress)           |
+| [3. Updates](#updates)  |
+| 4. Help / Contact Me (in progress)           |
 
 ## Quick description
 
@@ -57,3 +58,10 @@ Apply
 And finally you will have sympa-shell visual !
 
 ![](https://files.valentinraillard.fr/GitHub/sympa-shell/9.png)
+
+## Updates
+| Version | Description |
+|-|-|
+| [1.0.0](https://github.com/rois2coeurs/sympa-shell/commit/53bcd58b3356cb6a8686dc4af13ade316549eff2) | default release |
+| [1.0.1](https://github.com/rois2coeurs/sympa-shell/commit/f33318e26dac9e87d247ab4b2d5aa1ad59b58fda) | Changed the folder logo which was not displayed correctly |
+| [1.0.2](https://github.com/rois2coeurs/sympa-shell/commit/ac39ac2967d6aaa819b9f025f31aaf15274ba4c3) | Bug correction : The pointer was not writing to the right place from time to time |
