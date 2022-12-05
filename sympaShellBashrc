@@ -4,4 +4,4 @@ parse_git_branch() {
  
 PROMPT_DIRTRIM=2
  
-PS1="\e[38;5;222m╭╴ \e[38;5;208m $WSL_DISTRO_NAME \e[38;5;68m \u \e[38;5;246m \h \e[38;5;203mﱮ \w\e[38;5;227m \$(parse_git_branch) \n\e[38;5;222m╰─ "
+PS1="\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\] $WSL_DISTRO_NAME \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch) \n\[\e[38;5;222m\]╰─ "
