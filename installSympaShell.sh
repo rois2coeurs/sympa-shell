@@ -50,4 +50,8 @@ then
 else
     echo "Link between sympa-shell.sh and .bashrc already exist"
 fi
+
+# Config Install
+cp default-config $SCRIPTDIR/config
+
 echo "Installation complete. Please restart your shell to see your SYMPA SHELL !"
