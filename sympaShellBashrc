@@ -96,6 +96,7 @@ function lightShell() {
 }
 
 case "$(cat ~/.sympa-shell/config | grep ^SHELL_STYLE= | sed -z 's/SHELL_STYLE=//g ')" in
-    1) fireShell ;;
-    *) lightShell ;;
+    0) ;;
+    1) lightShell ;;
+    2) fireShell ;;
 esac

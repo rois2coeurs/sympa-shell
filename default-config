@@ -1,7 +1,8 @@
-#################################
-# Change your shell style here. #
-#   -------------------------   #
-# 0 = Light (Default)           #
-# 1 = Fire                      #
-#################################
-SHELL_STYLE=0
+###########################################
+# Change your shell style here.           #
+#    --------------------------------     #
+# 0 = Default Shell (disable sympa-shell) #
+# 1 = Light (Default)                     #
+# 2 = Fire                                #
+###########################################
+SHELL_STYLE=1
