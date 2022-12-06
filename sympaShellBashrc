@@ -1,6 +1,14 @@
+# ========
+# Git Part
+# ========
+
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1 /'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
+
+# =================
+# Distribution Part
+# =================
 
 distribution_name=$(cat /etc/*-release | grep ^ID= | sed -z 's/ID=//g ')
 
@@ -30,11 +38,12 @@ distribution_icon=$(
     esac
 )
 
-PROMPT_DIRTRIM=2
-
-PS1="\n\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\]$distribution_icon $distribution_name \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch)\[\e[38;5;119m\]\$(printTime)\n\[\e[38;5;222m\]╰─ "
+# ===================================
+# Execution time of last command Part
+# ===================================
 
 start=0
+PROMPT_COMMAND=start=0
 
 function printTime() {	
 	local us=$((delta_us % 1000))
@@ -60,13 +69,33 @@ function resetTime() {
 	start=10#$(date +%s%6N)
 }
 
-normalcol="$(tput sgr0)"
+trap resetTime DEBUG
 
-function precmd() {
-	resetTime
-	echo -n "$normalcol"
+# ==========
+# Shell Part
+# ==========
+
+PROMPT_DIRTRIM=2
+
+function fireShell() {
+    PS1="\n\[\e[48;5;196m\]\[\e[38;5;255m\] $distribution_icon "    # Distribution icon
+    PS1+="\[\e[38;5;196m\]\[\e[48;5;202m\] "                       # ->Separator
+    PS1+="\[\e[38;5;0m\] \u  \h"                                  # Username and hostname
+    PS1+="\[\e[38;5;202m\]\[\e[48;5;208m\] "                       # ->Separator
+    PS1+="\[\e[38;5;0m\]\w"                                         # Working directory
+    PS1+="\[\e[38;5;208m\]\[\e[48;5;214m\] "                       # ->Separator
+    PS1+="\[\e[38;5;0m\]\$(parse_git_branch)"                       # Git branch
+    PS1+="\[\e[38;5;214m\]\[\e[48;5;220m\] "                       # ->Separator
+    PS1+="\[\e[38;5;0m\]\$(printTime)"                              # Execution time of last command
+    PS1+="\[\e[38;5;220m\]\[\e[49m\] "                             # ->Separator
+    PS1+="\n﯀\[\e[0m\] "                                            # Prompt
 }
 
-trap precmd DEBUG
+function lightShell() {
+    PS1="\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\]$distribution_icon $distribution_name \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch)\[\e[38;5;119m\]\$(printTime)\n\[\e[38;5;222m\]╰─ "
+}
 
-PROMPT_COMMAND=start=0
+case "$(cat ~/.sympa-shell/config | grep ^SHELL_STYLE= | sed -z 's/SHELL_STYLE=//g ')" in
+    1) fireShell ;;
+    *) lightShell ;;
+esac
