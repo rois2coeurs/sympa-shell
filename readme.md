@@ -81,3 +81,5 @@ And finally you will have sympa-shell visual !
 | [1.3.0](https://github.com/rois2coeurs/sympa-shell/commit/d189b85eeebe03737faaefbbd5c11f35b4a44f22) | Restructured the code and added a fire version of the shell |
 | [1.3.1](https://github.com/rois2coeurs/sympa-shell/commit/21c8bc619bdd76605aca0aa935708d2599a5483b) | Added a configuration file to choose the shell version (fire or light) |
 | [1.3.2](https://github.com/rois2coeurs/sympa-shell/commit/cf40d378e735d5d2b05eb4bf6102ba014dadc4d7) | Add an option to disable sympa-shell in config file |
+| [1.3.3](https://github.com/rois2coeurs/sympa-shell/commit/bbcfd0653d1e093015965cdf23250e38b406386f) | Added missing space in light shell |
+| [1.4.0](https://github.com/rois2coeurs/sympa-shell/commit/2571a46cb153dae2d7f80518fbb38cb4a1a184a4) | Added a new shell (Half Circle Shell) |
