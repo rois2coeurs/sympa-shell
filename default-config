@@ -4,5 +4,6 @@
 # 0 = Default Shell (disable sympa-shell) #
 # 1 = Light (Default)                     #
 # 2 = Fire                                #
+# 3 = Half Circle                         #
 ###########################################
 SHELL_STYLE=1

@@ -6,6 +6,10 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
 
+parse_git_branch_halfCircle() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/   \1/'
+}
+
 # =================
 # Distribution Part
 # =================
@@ -76,6 +80,22 @@ trap resetTime DEBUG
 # ==========
 
 PROMPT_DIRTRIM=2
+
+function halfCircleShell() {
+    PS1=""
+    PS1="\n\[\e[48;5;33m\]\[\e[38;5;255m\] $distribution_icon "     # Distribution icon
+    PS1+="\[\e[38;5;33m\]\[\e[48;5;237m\] "                        # ->Separator
+    PS1+="\[\e[38;5;251m\] \u "                                    # Username
+    PS1+=" "                                                       # ->Separator
+    PS1+="\[\e[38;5;251m\] \h "                                    # Uhostname
+    PS1+=" "                                                       # ->Separator
+    PS1+="ﱮ \w"                                                     # Working directory
+    PS1+="\[\e[38;5;251m\]\$(parse_git_branch_halfCircle) "         # Git branch 
+    PS1+="\[\e[38;5;237m\]\[\e[48;5;161m\] "                       # ->Separator
+    PS1+="\[\e[38;5;251m\]\$(printTime)"                            # Execution time of last command
+    PS1+="\[\e[38;5;161m\]\[\e[49m\] "                             # ->Separator
+    PS1+="\n\[\e[0m\]"                                              # Prompt
+}
 
 function fireShell() {
     PS1="\n\[\e[48;5;196m\]\[\e[38;5;255m\] $distribution_icon "    # Distribution icon
