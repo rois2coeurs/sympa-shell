@@ -6,8 +6,8 @@
 | -------------------------------------------- |
 | [1. Quick description](#quick-description)   |
 | [2. Installation Guide](#installation-guide) |
-| [3. Updates](#updates)  |
-| 4. Help / Contact Me (in progress)           |
+| [3. Updates](#updates)                       |
+| [4. Help / Contact Me](#contact)           |
 
 ## Quick description
 
@@ -19,51 +19,47 @@ sympa-shell also displays command execution time
 
 ![](https://files.valentinraillard.fr/GitHub/sympa-shell/11.png)
 
+3 differents display mode :
+
+- FireShell
+
+![](https://files.valentinraillard.fr/GitHub/sympa-shell/fireShellPreview.png)
+- LightShell
+
+![](https://files.valentinraillard.fr/GitHub/sympa-shell/lightShellPreview.png)
+- HalfCircleShell
+
+![](https://files.valentinraillard.fr/GitHub/sympa-shell/halfCircleShellPreview.png)
+
 ## Installation Guide
 
-Clone the depot via `git clone https://github.com/rois2coeurs/sympa-shell.git` or just download it one zip format.
+### Setup
 
-Now that you have unzipped or clone the depot you have 3 files :
+The installation is fully automated, you won't need to do anything except restart your shell when finished.
 
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/1.png)
+```
+git clone https://github.com/rois2coeurs/sympa-shell.git
+cd sympa-shell
+chmod +x installSympaShell.sh
+./installSympaShell.sh
+```
 
-The only one we are going to use is installSympaShell.sh. But we need to modify the permissions to launch it via `chmod 755 installSympaShell.sh`
+After restarting it you will see that. We advise you to [change your font to JetBrain Mono Nerd to have a better visual](change-terminal-font.md).
 
-Now we can launch the installation via `./installSympaShell.sh`.
+### Configuration
 
-You have nothing to do the installation is automatic.
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/2.png)
-
-To see sympa-shell you will need to restart your terminal
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/3.png)
-
-After restarting it you will see that. We advise you to change your font to JetBrain Mono Nerd to have a better visual.
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/4.png)
-
-Right-click on your terminal and select preferences
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/5.png)
-
-Click on default profile and change the font.
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/6.png)
-
-Select JetBrainMono Nerd Font and click on OK
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/7.png)
-
-Apply
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/8.png)
-
-And finally you will have sympa-shell visual !
-
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/9.png)
+You can choose between different shell appearances by modifying the file
+- `~/.sympa-shell/config`
 
 ## Updates
+**Update notation :**
+
+ 1.x.x = The version
+
+ x.1.x = The update such as adding features or shell
+
+ x.x.1 = Fixed an issue in the update
+ 
 | Version | Description |
 |-|-|
 | [1.0.0](https://github.com/rois2coeurs/sympa-shell/commit/53bcd58b3356cb6a8686dc4af13ade316549eff2) | default release |
@@ -83,3 +79,10 @@ And finally you will have sympa-shell visual !
 | [1.3.2](https://github.com/rois2coeurs/sympa-shell/commit/cf40d378e735d5d2b05eb4bf6102ba014dadc4d7) | Add an option to disable sympa-shell in config file |
 | [1.3.3](https://github.com/rois2coeurs/sympa-shell/commit/bbcfd0653d1e093015965cdf23250e38b406386f) | Added missing space in light shell |
 | [1.4.0](https://github.com/rois2coeurs/sympa-shell/commit/2571a46cb153dae2d7f80518fbb38cb4a1a184a4) | Added a new shell (Half Circle Shell) |
+
+## Contact
+
+If you have problems with sympa-shell you can create issues on github or contact me by:
+- Discord : `rois2coeurs#2833`
+- Discord server : https://discord.gg/KNbs5FVdX3
+- Mail : `rois2coeurs@gmail.com`
