@@ -119,4 +119,5 @@ case "$(cat ~/.sympa-shell/config | grep ^SHELL_STYLE= | sed -z 's/SHELL_STYLE=/
     0) ;;
     1) lightShell ;;
     2) fireShell ;;
+    3) halfCircleShell ;;
 esac
