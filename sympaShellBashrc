@@ -127,7 +127,7 @@ function lightShell() {
     PS1+="\[\e[38;5;208m\]$distribution_icon $distribution_name "   # Distribution icon and name
     PS1+="\[\e[38;5;68m\] \u "                                     # Username
     PS1+="\[\e[38;5;246m\] \h "                                    # Hostname
-    PS1+="\[\e[38;5;203m\]ﱮ \w "                                    # Working directory
+    PS1+="\[\e[38;5;203m\] \$(maxFileNameLength) "                                    # Working directory
     PS1+="\[\e[38;5;227m\]\$(parse_git_branch) "                    # Git branch
     PS1+="\[\e[38;5;119m\]\$(printTime) "                           # Execution time of last command
     PS1+="\n\[\e[38;5;222m\]╰─\[\e[0m\] "                          # Prompt
