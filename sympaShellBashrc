@@ -100,7 +100,7 @@ function halfCircleShell() {
     PS1+=" "                                                       # ->Separator
     PS1+="\[\e[38;5;251m\] \h "                                    # Uhostname
     PS1+=" "                                                       # ->Separator
-    PS1+="$(maxFileNameLength)"                                   # Working directory
+    PS1+="$(maxFileNameLength)"                                     # Working directory
     PS1+="\[\e[38;5;251m\]\$(parse_git_branch_halfCircle) "         # Git branch 
     PS1+="\[\e[38;5;237m\]\[\e[48;5;161m\] "                       # ->Separator
     PS1+="\[\e[38;5;251m\]\$(printTime)"                            # Execution time of last command
@@ -109,7 +109,7 @@ function halfCircleShell() {
 }
 
 function fireShell() {
-    PS1="\n\[\e[48;5;196m\]\[\e[38;5;255m\] $distribution_icon "    # Distribution icon
+    PS1="\n\[\e[48;5;196m\]\[\e[38;5;255m\] $distribution_icon "   # Distribution icon
     PS1+="\[\e[38;5;196m\]\[\e[48;5;202m\] "                       # ->Separator
     PS1+="\[\e[38;5;0m\] \u  \h"                                  # Username and hostname
     PS1+="\[\e[38;5;202m\]\[\e[48;5;208m\] "                       # ->Separator
@@ -123,7 +123,14 @@ function fireShell() {
 }
 
 function lightShell() {
-    PS1="\[\e[38;5;222m\]╭╴ \[\e[38;5;208m\]$distribution_icon $distribution_name \[\e[38;5;68m\] \u \[\e[38;5;246m\] \h \[\e[38;5;203m\]ﱮ \w\[\e[38;5;227m\] \$(parse_git_branch) \[\e[38;5;119m\]\$(printTime)\n\[\e[38;5;222m\]╰─ "
+    PS1="\[\e[38;5;222m\]╭╴"
+    PS1+="\[\e[38;5;208m\]$distribution_icon $distribution_name "   # Distribution icon and name
+    PS1+="\[\e[38;5;68m\] \u "                                     # Username
+    PS1+="\[\e[38;5;246m\] \h "                                    # Hostname
+    PS1+="\[\e[38;5;203m\]ﱮ \w "                                    # Working directory
+    PS1+="\[\e[38;5;227m\]\$(parse_git_branch) "                    # Git branch
+    PS1+="\[\e[38;5;119m\]\$(printTime) "                           # Execution time of last command
+    PS1+="\n\[\e[38;5;222m\]╰─\[\e[0m\] "                          # Prompt
 }
 
 case "$(cat ~/.sympa-shell/config | grep ^SHELL_STYLE= | sed -z 's/SHELL_STYLE=//g ')" in
