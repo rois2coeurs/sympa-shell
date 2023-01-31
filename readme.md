@@ -80,6 +80,7 @@ You can choose between different shell appearances by modifying the file
 | [1.3.3](https://github.com/rois2coeurs/sympa-shell/commit/bbcfd0653d1e093015965cdf23250e38b406386f) | Added missing space in light shell |
 | [1.4.0](https://github.com/rois2coeurs/sympa-shell/commit/2571a46cb153dae2d7f80518fbb38cb4a1a184a4) | Added a new shell (Half Circle Shell) |
 | [1.4.1](https://github.com/rois2coeurs/sympa-shell/commit/2af423230188b01a8e5006e6178170503d234bb7) | Added missing switch output |
+| [1.5.0](https://github.com/rois2coeurs/sympa-shell/commit/7eaabe959d1d37501a139598b49062ef0325ae23) | Changing the current location display |
 
 ## Contact
 
