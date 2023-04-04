@@ -13,23 +13,23 @@
 
 sympa-shell is a pretty cool shell :) It's very simple but effective! When you are in a git folder you will see the branch you are currently in. This project is still under development and is destined to evolve.
 
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/10.png)
+![](https://valentinraillard.fr/GitHub/sympa-shell/10.png)
 
 sympa-shell also displays command execution time
 
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/11.png)
+![](https://valentinraillard.fr/GitHub/sympa-shell/11.png)
 
 3 differents display mode :
 
 - FireShell
 
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/fireShellPreview.png)
+![](https://valentinraillard.fr/GitHub/sympa-shell/fireShellPreview.png)
 - LightShell
 
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/lightShellPreview.png)
+![](https://valentinraillard.fr/GitHub/sympa-shell/lightShellPreview.png)
 - HalfCircleShell
 
-![](https://files.valentinraillard.fr/GitHub/sympa-shell/halfCircleShellPreview.png)
+![](https://valentinraillard.fr/GitHub/sympa-shell/halfCircleShellPreview.png)
 
 ## Installation Guide
 
